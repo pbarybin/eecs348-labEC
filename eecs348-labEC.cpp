@@ -74,6 +74,11 @@ int main() {
             break;
         }
 
+        if (input.length() > 20) {
+            cout << "Please enter a string of 20 characters or less." << endl;
+            continue;
+        }
+
         double number = extractNumeric(input);
 
         if (number != -999999.99) {
